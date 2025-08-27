@@ -9,7 +9,7 @@ public class ModuleService(ILogger<ModuleService> logger) : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            logger.LogInformation("Module A is running at: {time}", DateTimeOffset.Now);
+            logger.LogInformation("Module B is running at: {time}", DateTimeOffset.Now);
             await Task.Delay(5000, stoppingToken);
         }
     }
